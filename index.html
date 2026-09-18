@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spinning Bean</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .bean {
-            animation: spin 2s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Station</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .station {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .item {
+      margin: 10px 0;
+      text-align: center;
+    }
+    .mug-rack {
+      width: 200px;
+      height: 50px;
+      background-color: #ccc;
+      border-radius: 10px;
+    }
+    .coffee-machine {
+      width: 150px;
+      height: 100px;
+      background-color: #8B4513;
+      border-radius: 10px;
+    }
+    .drinkable-cup {
+      width: 50px;
+      height: 100px;
+      background-color: #FFD700;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <img src="https://example.com/spinning-bean.gif" alt="Spinning Bean" class="bean">
+  <div class="station">
+    <div class="item mug-rack">Mug Rack</div>
+    <div class="item coffee-machine">Coffee Machine</div>
+    <div class="item drinkable-cup">Drinkable Cup</div>
+  </div>
 </body>
 </html>
