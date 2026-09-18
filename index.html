@@ -13,16 +13,20 @@
             margin: 0;
             background-color: #f0f0f0;
         }
-        img {
+        .bean {
             animation: spin 2s linear infinite;
         }
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 <body>
-    <img src="bean.gif" alt="Spinning Bean">
+    <img src="https://example.com/spinning-bean.gif" alt="Spinning Bean" class="bean">
 </body>
 </html>
