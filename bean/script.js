@@ -1,0 +1,1 @@
+const spin = () => { const gif = document.getElementById('bean-gif'); gif.style.transform = 'rotate(360deg)'; }; setInterval(spin, 1000);
